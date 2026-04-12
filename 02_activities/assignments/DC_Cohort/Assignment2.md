@@ -56,7 +56,23 @@ The store wants to keep customer addresses. Propose two architectures for the CU
 **HINT:** search type 1 vs type 2 slowly changing dimensions. 
 
 ```
-Your answer...
+Type 1 = overwrite old data with new data
+Customer_Address_Type-1
+customer_id
+customer_address
+customer_province
+customer_postal_code
+customer_updated_at
+
+Type 2 = preserves historical changes by creating a new record for each change
+Customer_Address_Type-1
+customer_id
+customer_address
+customer_province
+customer_postal_code
+effective_date
+end_date
+is_current
 ```
 
 ***
@@ -191,5 +207,5 @@ Consider, for example, concepts of labour, bias, LLM proliferation, moderating c
 
 
 ```
-Your thoughts...
+The article was very illuminating and provided me more context and insight to how neural nets are developed. We are not often sharing or talking about this side of AI, particularly in my field of health systems research. It feels like it’s branded to us to only know the ‘user interface’ side and not about the backend/internal structures, especially because it’s labelled as the ‘next best thing for healthcare’. I perceive this as a major ethical issue where there is a lack of transparency on AI development in my field, in media, and general rhetoric of it all. It has become a ‘black box’. I will admit, when I first heard about AI years ago, I viewed it as a positive impact to the world and jumped on the bandwagon of “this will fix the healthcare system”. But it was only really when I had conversations with different people where I started to have a more critical lens on AI. I discuss with my husband often (who’s background is in theoretical particle physics and now computational neuroscience), where he shared more about what AI actually is and the research behind it (just like how the article frames it actually). And it was also when I had brief conversations with my older sister (who’s background is in political science and history, with an affinity to learning about environmental impacts), where she shared the environmental and labor concerns related to AI. And finally in my part-time research work, I get the opportunity to observe roundtables where some senior decision-makers in health (think ministers of health and CEOs of hospitals), and they talk about how our infrastructure (e.g., workforce delivery, literal data infrastructures because we still use fax in Canada) needs to be further developed before we even start to think about how we embed AI into the workflows of healthcare. This is where I started to have a more critical perspective on AI, and what it can actually do, the potential consequences, and what it actually means for health systems research. This brings up another issue highlighted in the article where there have been ethical concerns with the training sets, including the labour force and the way images are labelled. For the latter, that’s a major concern because it will have downstream effects to how AI is used in healthcare. Healthcare is sadly already marred with discrimination and systemic racism, and with training sets that are biased, there could have dire consequences to the quality of patient care. Not only is it about patient demographic characteristics but imagine a clinical decision support system that is developed but it’s been trained to ignore certain symptoms or fail flag to doctors about certain conditions related to a patient (e.g., misinterpreting symptoms among marginalized populations, especially women). Positively, there are groups who are aware of the ethical concerns around AI use in healthcare, yet there needs to be better oversight and transparency of how the back-end of AI has been developed. Overall, the article brings up valid concerns, and I wish we had more discourse publicly and openly about how these systems continue to perpetuate very human challenges (because it is built by us after all!), especially because of the way the population continues to embed AI into their everyday lives.
 ```
